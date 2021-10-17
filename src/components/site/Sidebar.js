@@ -16,6 +16,9 @@ import Hooks from '../concepts/Hooks';
 import TimePiecesApp from '../apps/timer-apps/TimePiecesApp'
 import NytApp from '../apps/nyt-app/NytApp';
 
+import ClassComponentDemo from '../redmodules/ClassComponentDemo';
+import ClassComponentProps from '../redmodules/ClassComponentProps';
+
 const Sidebar = () => {
     return (
         <div className="sidebar">
@@ -31,6 +34,8 @@ const Sidebar = () => {
                     <li><Link to="/resources">Resources</Link></li>
                     <li><Link to="/timer">Timers</Link></li>
                     <li><Link to="/nytapp">NYT App</Link></li>
+                    <li><Link to="/classcomponent">Class Component</Link></li>
+                    <li><Link to="/classcomponentprops">Class Component Props</Link></li>
                 </ul>
             </div>
             <div className="sidebar-route">
@@ -45,7 +50,9 @@ const Sidebar = () => {
                     <Route exact path="/propsdemo"><PropsDemo /></Route>
                     <Route exact path="/hooks"><Hooks /></Route>
                     <Route exact path="/timer"><TimePiecesApp /></Route>
-                    <Route exact pate="/nytapp"><NytApp /></Route>
+                    <Route exact path="/nytapp"><NytApp /></Route>
+                    <Route exact path="/classcomponent"><ClassComponentDemo /></Route>
+                    <Route exact path="/classcomponentprops"><ClassComponentProps /></Route>
                 </Switch>
             </div>
         </div>
